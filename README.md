@@ -1,23 +1,23 @@
 # Hahow-assignment-Allen-Lin
-Hahow Quality Engineer 徵才小專案
+Hahow Quality Engineer 徵才小專案   /n
 這是一個小型的徵才專案，會需要你使用熟悉的框架與語言來實作 API & UI 的驗證
 
 細部需求
-請使用 git / GitHub 來做整個專案的版本控管
-請提供一份 README 文件說明：
-我們該如何執行這個專案
-專案的架構
+請使用 git / GitHub 來做整個專案的版本控管       /n
+請提供一份 README 文件說明：                    /n
+我們該如何執行這個專案                          /n
+專案的架構                                    /n
 
 使用cypress & JS
 
 API
-URL: https://swapi.dev/
-相關的限制可以參考網站文件
+URL: https://swapi.dev/                      /n
+相關的限制可以參考網站文件                       /n
 
 共使用下列API
-https://swapi.dev/api/films?search=${title}
-https://swapi.dev/api/films
-https://swapi.dev/api/vehicles
+https://swapi.dev/api/films?search=${title}   /n
+https://swapi.dev/api/films                   /n
+https://swapi.dev/api/vehicles                /n
 
 
 Goal
