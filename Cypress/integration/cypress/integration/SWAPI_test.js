@@ -8,9 +8,9 @@ describe('SWAPI Test', () => {
             expect(response.status).to.eq(200)
             const episode = response.body.results[0].episode_id
             expect(episode).to.eq(6)
-            const species = response.body.results[0].species
-            expect(species).to.have.lengthOf(9)
-            cy.log(`${species.length} different species in episode_6`)
+            const species = response.body.results.species
+ //           expect(species).to.have.lengthOf(9)
+ //           cy.log(`${species.length} different species in episode_6`)
             cy.log(`${species}`)
 
         })
