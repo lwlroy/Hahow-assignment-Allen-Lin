@@ -50,6 +50,8 @@ describe('SWAPI Test', () => {
         })
     
     })
+
+    
     function search_film_by_title(title) {
         return cy.request(`https://swapi.dev/api/films?search=${title}`)   
     }
@@ -58,16 +60,7 @@ describe('SWAPI Test', () => {
     function all_Films() {
         return cy.request('https://swapi.dev/api/films') 
     }
-    
-    function sort_species(speciesorder){  
-        const result = []
-        speciesorder.forEach((element) => {
-            result.push([
-                element.species
-            ])
-        })
-        return result
-    }
+
     function sort_by_episode_id_ASC(films) 
     {  
         const result = []
