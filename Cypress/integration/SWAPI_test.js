@@ -36,7 +36,7 @@ describe('SWAPI Test', () => {
         it('Should list vehicles max atmosphering speed is over 1000', ()=> {
             all_Vehicles().then((response) => {
                 const vehicles = response.body.results
-                const actualResult = vehicles_max_atmosphering_speed_over_1000(vehicles)
+                const actualResult = max_atmosphering_speed_over_1000(vehicles)
                 const expectResult = [
                     ["T-16 skyhopper", "1200"],
                     ["TIE/LN starfighter", "1200"],
@@ -78,7 +78,7 @@ describe('SWAPI Test', () => {
     function all_Vehicles() {
         return cy.request('https://swapi.dev/api/vehicles')
     }
-    function vehicles_max_atmosphering_speed_over_1000(vehicles) {  
+    function max_atmosphering_speed_over_1000(vehicles) {  
         const result = []
         vehicles.forEach((element) => {
             if(element.max_atmosphering_speed > 1000) {
